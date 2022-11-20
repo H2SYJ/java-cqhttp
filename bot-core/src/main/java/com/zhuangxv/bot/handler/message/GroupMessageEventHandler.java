@@ -64,7 +64,7 @@ public class GroupMessageEventHandler implements EventHandler {
             if (groupMessageHandler.isAt()) {
                 boolean isAt = false;
                 for (Message message : messageChain) {
-                    if (message instanceof AtMessage && Long.parseLong(((AtMessage) message).getQq()) == groupMessageEvent.getSelfId()) {
+                    if (message instanceof AtMessage && Long.parseLong(((AtMessage) message).getQq()) == groupMessageEvent.getBotQq()) {
                         isAt = true;
                     }
                 }
