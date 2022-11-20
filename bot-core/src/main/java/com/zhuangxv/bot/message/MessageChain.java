@@ -57,4 +57,9 @@ public class MessageChain extends ArrayList<Message> {
         return messageChain;
     }
 
+    public MessageChain push(Message message) {
+        this.add(message);
+        return this;
+    }
+
 }
