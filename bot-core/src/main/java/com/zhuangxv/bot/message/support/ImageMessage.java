@@ -4,8 +4,10 @@ import com.alibaba.fastjson.JSON;
 import com.zhuangxv.bot.message.Message;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 @Data
+@Accessors(chain = true)
 @NoArgsConstructor
 public class ImageMessage implements Message {
 

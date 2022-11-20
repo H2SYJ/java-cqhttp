@@ -7,12 +7,14 @@ import com.zhuangxv.bot.message.MessageChain;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 
 /**
  * @author jiluo
  * @since 2021-09-08
  */
 @Getter
+@Accessors(chain = true)
 public class ForwardNodeMessage implements Message {
 
     @Setter(AccessLevel.NONE)

@@ -1,10 +1,11 @@
 package com.zhuangxv.bot.message.support;
 
-import com.alibaba.fastjson.JSON;
 import com.zhuangxv.bot.message.Message;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Data
+@Accessors(chain = true)
 public class UnknownMessage implements Message {
 
     private String json;
