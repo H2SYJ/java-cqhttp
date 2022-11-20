@@ -23,6 +23,11 @@ public class ImageMessage implements Message {
         this.file = file;
     }
 
+    public ImageMessage(String file, String url) {
+        this.file = file;
+        this.url = url;
+    }
+
     @Override
     public String toString() {
         return "image[" + file + "]";

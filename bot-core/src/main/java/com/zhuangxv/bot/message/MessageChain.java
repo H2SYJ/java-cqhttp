@@ -37,6 +37,11 @@ public class MessageChain extends ArrayList<Message> {
         return this;
     }
 
+    public MessageChain image(String file, String url) {
+        this.add(new ImageMessage(file, url));
+        return this;
+    }
+
     public MessageChain reply(int messageId) {
         this.add(new ReplyMessage(messageId));
         return this;
