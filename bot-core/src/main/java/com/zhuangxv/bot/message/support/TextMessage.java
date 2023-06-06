@@ -6,6 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+/**
+ * @author xiaoxu
+ * @since 2022-05-24 10:19
+ */
 @Data
 @Accessors(chain = true)
 @NoArgsConstructor
